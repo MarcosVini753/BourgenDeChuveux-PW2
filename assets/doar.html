@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Faça uma doação</title>
+</head>
+
+<body>
+   <header>
+      <nav>
+
+         <div>
+            <a href="../index.html"><img src="./img/logoBDC.png" alt="Bourgeon de Chuveux - logo"></a>
+         </div>
+
+         <ul>
+            <li><a href="./equipe.html">Nossa Equipe</a></li>
+            <li><a href="./contato.html">Fale Conosco</a></li>
+            <li><a href="./doar.html">Faça uma doação</a></li>
+         </ul>
+
+      </nav>
+   </header>
+
+   <main>
+      <h1>Contribua com a nossa causa realizando uma doação</h1>
+      <form action="">
+         <label for="tipoDoacao">O que você quer doar ?</label>
+         <select name="tipoDoacao" id="tipoDoacao">
+            <option value="null" selected disabled>Escolha uma opção</option>
+            <option value="dinheiro">Dinheiro</option>
+            <option value="cabelo">Cabelo</option>
+         </select>
+
+         <!-- para cabelo -->
+         <br>
+         <label for="estado">Em que estado você mora?</label>
+         <input type="text" name="estado" id="estado">
+         <br>
+         <label for="cidade">Em que cidade você mora?</label>
+         <input type="text" name="cidade" id="cidade">
+         <br>
+         <label for="endereco">digite seu endereço.</label><br>
+         <textarea name="endereco" id="endereco" cols="15" rows="7"></textarea>
+         <br>
+         <!-- /para cabelo -->
+
+         <!-- para dinheiro -->
+         <label for="formaDoacao">Como será a forma de doação? </label>
+         <select name="formaDoacao" id="formaDoacao">
+            <option value="null" selected disabled>Escolha uma opção</option>
+            <option value="cartao">Cartão</option>
+            <option value="pix">Pix</option>
+            <option value="tranferencia">tranferencia</option>
+         </select>
+         <br>
+         <label for="quantia">Digite a quantia</label>
+         <input type="number" name="quantia" id="quantia">
+         <p><b>olhe os comentários no html</b></p>
+         <!-- /para dinheiro -->
+
+         <!-- a idea aqui é fazer aparecer um dos dois tipos de form, depedendo de qual foi a escolha da pessoa sobre o que vai ser doado -->
+      </form>
+
+   </main>
+
+   <footer>
+
+      <h2>Redes sociais do projeto</h2>
+
+      <ul>
+         <li><a href="http://instagram.com/BourgeondeChuveux/">instagram</a></li>
+         <li><a href="http://facebook.com/BourgeondeChuveux/">facebook</a></li>
+         <li><a href="mailto:bourgeondechuveux@gmal.com">Email</a></li>
+
+      </ul>
+
+   </footer>
+</body>
+
+</html>

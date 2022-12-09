@@ -1,5 +1,5 @@
-Integrantes do grupo: 
-Williane Feitosa
-Gustavo Barbosa 
-Emilly Joany
-Marcos Vinícius
+*Integrantes do grupo:*
+    Williane Feitosa
+    Gustavo Barbosa 
+    Emilly Joany
+    Marcos Vinícius

@@ -11,6 +11,13 @@ fazem parte do escopo do seu projeto
 - Escolha uma Classe e crie um CRUD com base no código desenvolvido em sala,
 a classe deve ter no mínimo 5 atributos.
 Data para entrega dia 07/12/2022 -->
+<style>
+    table,td,th{
+        border: 2px solid black;
+        padding: 3px;
+      }
+</style>
+<script defer src="./scripts/js/crud.js"></script>
 </head>
 <body>
 
@@ -33,23 +40,41 @@ Data para entrega dia 07/12/2022 -->
      <main>
 
         <div>
-            <form >
+            <form action="#" onsubmit="salvar();return false">
                 <label for="nome">Nome do Doador</label>
-                <input type="text" id="nome">
+                <input required type="text" id="nome">
                 <br>
                 <label for="cpf">CPF do Doador</label>
-                <input type="text" id="cpf">
+                <input required type="text" id="cpf">
                 <br>
                 <label for="numero">Número/WhatsApp do Doador</label>
-                <input type="tel" id="numero">
+                <input required type="tel" id="numero">
                 <br>
                 <label for="email">Email do Doador</label>
-                <input type="email" id="email">
+                <input required type="email" id="email">
                 <br>
                 <label for="endereco">Endereço do Doador</label>
-                <input type="text" id="endereco">
+                <input required type="text" id="endereco">
                 <br>
+                <button type="submit">Salvar</button>
             </form>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Numero</th>
+                        <th>Email</th>
+                        <th>Endereco</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+                </tbody>
+            </table>
         </div>
 
      </main>
